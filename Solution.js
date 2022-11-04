@@ -32,7 +32,7 @@ var smallestCommonElement = function (matrix) {
 function binarySearch(array, target) {
     let left = 0;
     let right = array.length - 1;
-    while (left < right) {
+    while (left <= right) {
         let middle = left + Math.floor((right - left) / 2);
         if (array[middle] === target) {
             return true;
